@@ -1,0 +1,291 @@
+/*FONT* SI US * ES SELECTOR UNIVERSAL Y USA TODAS LAS ETIQUETAS*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@1,500&display=swap');
+*{font-family: font-family: 'Quicksand', sans-serif;  
+}
+
+/*selectores de etiqueta*/
+.nav{
+    /*background-image: url(../fotos/Comida/Banner.jpg) ; - Esto es por si quiero poner una imagen*/
+    background-color: rgb(231, 192, 15);
+    padding: 0px 30px;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ .Nav1{
+    background-color: rgb(231,192,15);
+ }
+
+.textsize{
+    font-size: 1.4em;
+}
+nav ul{ 
+    list-style: none;
+    display: flex;
+}
+/*Esto es para sacar los puntos de itiem de las listas de HTML que se ponen automaticos - Ademas esto dice que elijo a UL que esta adentro de NAV, Esto sirve para
+ser mas especifica sobre lo que quiero cambiar*/
+nav ul li{
+    display: flex
+}
+nav ul li a{ 
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    margin: 0px 10px;  
+    width: 150%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+   }
+
+nav img{
+    width: 150px;
+}
+
+
+.card {
+    z-index: 1; /* o cualquier valor menor que el z-index de la barra de navegación */
+  }
+  
+
+a{
+    cursor: pointer;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+h1 { 
+    color: rgb(146, 109, 79) ;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0px;
+    font-size: 3em;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(146, 109, 79);
+    width: 100%;
+    padding: 10px 3px;
+    margin: 0px;
+    font-size: 2em;
+    
+
+}
+h3, h4{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(146, 109, 79) ;;
+    width: auto;
+    padding: 10px 3px;
+    margin: 50px 100px;
+    font-size: 1.5em;
+    ;
+}
+.fontsizem{
+    font-size: 3em;
+}
+section div img{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+}
+p{ 
+    width: auto;
+    padding: 10px 10px;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+form{
+    margin: 30px 10px;
+    padding: 30px 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+form div{ 
+    margin: 3px 10px;
+    padding: 3px 10px;
+
+}
+iframe{
+    margin-bottom: 100px;
+    display: inline-block;
+}
+footer{ 
+    background-color: rgb(231, 192, 15);
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+figure{
+    width: 30%;
+    background-color: white;
+    margin: 10px 10;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+
+figcaption{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+}
+
+
+/*Class*/
+.textLeft{
+text-align: left;
+}
+.textRight{
+    text-align: right;
+}
+.textCenter{
+    text-align: center;
+}
+.fondoDestacado{
+    background-color: bisque;
+}
+
+
+/*Box Modeling - clase 4 - explicacion en cuaderno/mydrive clase4*/
+.contenedor{
+    padding:3px;
+    margin:3px ;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    font-size: 1.5em;
+    display: block;
+
+}
+
+.ContenedorReasons{
+    padding: 30px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1;
+    align-items: center;
+
+}
+
+.cards{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1;
+    
+}
+
+.hijo{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foodImgBreaker{
+    width: 300px;
+   height: auto;
+
+}
+
+.foodImaMenu{
+    width: auto;
+    padding: 10px 3px;
+    margin: 10px 100px;
+
+
+}
+
+.figureFoodProducts{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+
+.Nav{
+    grid-area: Nav;
+}
+.RealFood{
+    grid-area: IRealfood;
+}
+
+.cards{
+    grid-area: cards;
+
+}
+
+.FotoDamian{
+    grid-area: FotoD;
+}
+.FotoAgos{
+    grid-area: FotoA;
+}
+
+.bg{
+    background-color:rgb(231, 192, 15);
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 767px) { /* para celulares */
+    .contenedor {
+      display: block;
+    }
+    .cards{
+        display: block;
+
+    }
+} 
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) { /* para tablets */
+    .contenedor{
+      grid-template-columns: 1fr;
+    }
+    .cards{
+        display: flex;
+    } 
+} 
+  
+  @media only screen and (min-width: 1024px) { /* para computadoras */
+    .contenedor {
+      grid-template-columns: 1fr 1fr;
+    }
+    .cards{
+        display: flex;
+    }
+ }
+  
