@@ -1,0 +1,53 @@
+//import all the parcials
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@1,500&display=swap');
+@import "_vars";
+@import "_product";
+@import "_mixins";
+@import "_nav";
+@import "_media";
+@import "_form";
+@import "_animaciones";
+
+footer{ 
+    background-color: $mainColor;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 3px 10px;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+.textLeft{
+    text-align: left;
+    }
+.textRight{
+        text-align: right;
+    }
+.textCenter{
+        text-align: center;
+    }
+.fondoDestacado{
+        background-color: bisque;
+    }
+
+.bg{
+        background-color:rgb(231, 192, 15);
+        color: white;
+        padding: 10px;
+    }
+
+iframe{
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+
+    

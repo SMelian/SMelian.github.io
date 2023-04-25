@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@1,500&display=swap");
+.contenedor, .hijo {
+  width: 100%;
+  height: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+}
+
+.tarj {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.hijo {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*usar para header- chequear 
+.headerGral{
+    background-image: url(../fotos/Agos_Damian.jpg);
+}
+*/
+/*Mixins*/
+div {
+  color: rgb(10, 9, 9);
+  padding: 0px;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(146, 109, 79);
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  font-size: 3em;
+  width: auto;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(146, 109, 79);
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
+  font-size: 2em;
+  width: auto;
+}
+
+h3, h4 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(146, 109, 79);
+  text-align: Left;
+  margin: 10px;
+  padding: 3px;
+  font-size: 1em;
+  width: auto;
+}
+
+nav {
+  background-color: rgb(231, 192, 15);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  color: rgb(10, 9, 9);
+  text-decoration: none;
+  margin: 0px 10px;
+  width: 150%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav img {
+  width: 150px;
+}
+
+section div img {
+  width: 100%;
+  height: auto;
+  margin: 0px 0px;
+}
+
+p {
+  width: auto;
+  padding: 10px 10px;
+  font-size: 1.5em;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(10, 9, 9);
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .contenedor, .hijo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedorFood {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .contenedor, .hijo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contenedorFood {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+form {
+  margin: 30px 10px;
+  padding: 30px 30px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+form div {
+  margin: 3px 10px;
+  padding: 3px 10px;
+}
+
+@keyframes animacionHeader {
+  0% {
+    background-image: url(../fotos/Nav/aboutUs.jpg);
+  }
+  50% {
+    background-image: url(../fotos/Nav/location.jpg);
+  }
+  100% {
+    background-image: url(../fotos/Nav/contactUs.jpg);
+  }
+}
+.header-animado {
+  height: 70vh;
+  background-size: cover;
+  animation-name: animacionHeader;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.transform:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+
+footer {
+  background-color: rgb(231, 192, 15);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 3px 10px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.fondoDestacado {
+  background-color: bisque;
+}
+
+.bg {
+  background-color: rgb(231, 192, 15);
+  color: white;
+  padding: 10px;
+}
+
+iframe {
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=main.css.map */

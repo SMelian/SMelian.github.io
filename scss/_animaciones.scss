@@ -1,0 +1,19 @@
+@keyframes animacionHeader {
+    0%{background-image: url(../fotos/Nav/aboutUs.jpg);}
+    50%{background-image: url(../fotos/Nav/location.jpg);}
+    100%{background-image: url(../fotos/Nav/contactUs.jpg);} 
+}
+
+.header-animado{
+    height: 70vh;
+    background-size: cover;
+    animation-name: animacionHeader;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.transform:hover{
+transform: scale(1.1);
+transition: all 2s;
+}
+

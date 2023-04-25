@@ -1,0 +1,17 @@
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+
+
+}
+
+.tarj{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: auto;
+}

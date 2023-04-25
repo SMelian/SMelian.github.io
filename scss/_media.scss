@@ -1,0 +1,9 @@
+@media (min-width: 720px) {
+    .contenedor { grid-template-columns: repeat(2, 1fr); }
+    .contenedorFood { grid-template-columns: repeat(2, 1fr); }
+  }
+
+@media (min-width: 900px) {
+    .contenedor { grid-template-columns: repeat(3, 1fr); }
+    .contenedorFood { grid-template-columns: repeat(3, 1fr);}
+  }

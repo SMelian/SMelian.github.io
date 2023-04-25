@@ -1,12 +1,14 @@
 /*FONT* SI US * ES SELECTOR UNIVERSAL Y USA TODAS LAS ETIQUETAS*/
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@1,500&display=swap');
 *{font-family: font-family: 'Quicksand', sans-serif;  
 }
 
 /*selectores de etiqueta*/
+
+/* Start my nav but I change to the SCSS
 .nav{
     /*background-image: url(../fotos/Comida/Banner.jpg) ; - Esto es por si quiero poner una imagen*/
-    background-color: rgb(231, 192, 15);
+ /*   background-color: rgb(231, 192, 15);
     padding: 0px 30px;
     height: 10vh;
     position: sticky;
@@ -18,7 +20,7 @@
     justify-content: space-around;
     align-items: center;
 }
- .Nav1{
+.Nav1{
     background-color: rgb(231,192,15);
  }
 
@@ -31,7 +33,7 @@ nav ul{
 }
 /*Esto es para sacar los puntos de itiem de las listas de HTML que se ponen automaticos - Ademas esto dice que elijo a UL que esta adentro de NAV, Esto sirve para
 ser mas especifica sobre lo que quiero cambiar*/
-nav ul li{
+/*nav ul li{
     display: flex
 }
 nav ul li a{ 
@@ -43,26 +45,23 @@ nav ul li a{
     font-size: 2em;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
    }
 
 nav img{
     width: 150px;
-}
-
+}*/
 
 .card {
     z-index: 1; /* o cualquier valor menor que el z-index de la barra de navegación */
   }
   
-
-a{
-    cursor: pointer;
-}
-
+/*
 header img{
     width: 100%;
     height: auto;
 }
+
 h1 { 
     color: rgb(146, 109, 79) ;
     font-family: 'Roboto', sans-serif;
@@ -91,7 +90,7 @@ h3, h4{
     margin: 50px 100px;
     font-size: 1.5em;
     ;
-}
+}*/
 .fontsizem{
     font-size: 3em;
 }
@@ -100,6 +99,7 @@ section div img{
     height: auto;
     margin: 0px 0px;
 }
+/*
 p{ 
     width: auto;
     padding: 10px 10px;
@@ -169,123 +169,68 @@ text-align: left;
 
 
 /*Box Modeling - clase 4 - explicacion en cuaderno/mydrive clase4*/
+
 .contenedor{
-    padding:3px;
-    margin:3px ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr;
+
+}
+
+.contenedorFood{
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1;
-    font-size: 1.5em;
-    display: block;
-
-}
-
-.ContenedorReasons{
-    padding: 30px;
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1;
     align-items: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr;
 
 }
 
-.cards{
+.tarj{
     width: 100%;
-    padding: 10px;
-    margin: 10px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1;
-    
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: auto;
 }
 
 .hijo{
     width: 100%;
-    padding: 10px;
+    padding-bottom: 10%;
+    padding-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    font-size: 1em;
 }
 
-.foodImgBreaker{
-    width: 300px;
-   height: auto;
+@media (min-width: 720px) {
+    .contenedor { grid-template-columns: repeat(2, 1fr); }
+    .contenedorFood { grid-template-columns: repeat(2, 1fr); }
+  }
 
-}
-
-.foodImaMenu{
-    width: auto;
-    padding: 10px 3px;
-    margin: 10px 100px;
-
-
-}
-
-.figureFoodProducts{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    
-}
+@media (min-width: 900px) {
+    .contenedor { grid-template-columns: repeat(3, 1fr); }
+    .contenedorFood { grid-template-columns: repeat(3, 1fr); }
+  }
 
 
-.Nav{
-    grid-area: Nav;
-}
-.RealFood{
-    grid-area: IRealfood;
-}
-
-.cards{
-    grid-area: cards;
-
-}
-
-.FotoDamian{
-    grid-area: FotoD;
-}
-.FotoAgos{
-    grid-area: FotoA;
-}
 
 .bg{
     background-color:rgb(231, 192, 15);
     color: white;
+    padding: 10px;
 }
 
 
 
-@media only screen and (max-width: 767px) { /* para celulares */
-    .contenedor {
-      display: block;
-    }
-    .cards{
-        display: block;
 
-    }
-} 
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) { /* para tablets */
-    .contenedor{
-      grid-template-columns: 1fr;
-    }
-    .cards{
-        display: flex;
-    } 
-} 
-  
-  @media only screen and (min-width: 1024px) { /* para computadoras */
-    .contenedor {
-      grid-template-columns: 1fr 1fr;
-    }
-    .cards{
-        display: flex;
-    }
- }
-  
+
+

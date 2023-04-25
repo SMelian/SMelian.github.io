@@ -1,0 +1,44 @@
+nav{
+    background-color: $mainColor;
+    ul{
+        list-style: none;
+        display: flex;
+
+        li{
+            display: flex;
+
+            a{  
+                    color:$textColor;
+                    text-decoration: none;
+                    margin: 0px 10px;  
+                    width: 150%;
+                    font-family: $mainFont;
+                    font-size: $textLg;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+    
+                }
+            }
+
+        }
+    img{
+        width: 150px;
+    }
+}
+
+section div img{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+}
+p{ 
+    width: auto;
+    padding: 10px 10px;
+    font-size: 1.5em;
+    font-family: $mainFont;
+    color: $textColor;
+    text-align: center;
+}
+
+

@@ -1,0 +1,54 @@
+
+//extend de carateristicas del .contenedor de productos a la caja de hijos
+.hijo{
+    @extend .contenedor;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/*usar para header- chequear 
+.headerGral{
+    background-image: url(../fotos/Agos_Damian.jpg);
+}
+*/
+
+/*Mixins*/
+
+@mixin divs($color,$padding){
+    color: $color;
+    padding: $padding;
+}
+
+div{
+    @include divs($textColor, 0px)
+}
+
+
+@mixin titles($aling,$margin, $padding, $fontsize) {
+    font-family: $mainFont;
+    color: $hColour;
+    text-align: $aling;
+    margin: $margin;
+    padding: $padding;
+    font-size: $fontsize;
+    width:auto   
+}
+
+
+
+h1 { 
+    @include titles(center,5px, 2px,$textLg )
+}
+
+h2{
+    @include titles(center,10px, 3px,$textMd )
+}
+h3, h4{
+    @include titles(Left,10px,3px,$texthSm )
+}
+
