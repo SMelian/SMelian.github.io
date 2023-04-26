@@ -45,7 +45,7 @@ h1 {
   width: auto;
 }
 
-h2 {
+h2, h3 {
   font-family: "Quicksand", sans-serif;
   color: rgb(146, 109, 79);
   text-align: center;
@@ -55,10 +55,10 @@ h2 {
   width: auto;
 }
 
-h3, h4 {
+h4 {
   font-family: "Quicksand", sans-serif;
   color: rgb(146, 109, 79);
-  text-align: Left;
+  text-align: left;
   margin: 10px;
   padding: 3px;
   font-size: 1em;

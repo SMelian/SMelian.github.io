@@ -40,15 +40,15 @@ div{
 }
 
 
-
 h1 { 
     @include titles(center,5px, 2px,$textLg )
 }
 
-h2{
+h2,h3{
     @include titles(center,10px, 3px,$textMd )
 }
-h3, h4{
-    @include titles(Left,10px,3px,$texthSm )
+
+h4{
+    @include titles(left,10px,3px,$texthSm )
 }
 
