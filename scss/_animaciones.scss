@@ -6,6 +6,7 @@
 
 .header-animado{
     height: 70vh;
+    width: 100vw;
     background-size: cover;
     animation-name: animacionHeader;
     animation-duration: 15s;
@@ -15,5 +16,10 @@
 .transform:hover{
 transform: scale(1.1);
 transition: all 2s;
+}
+
+.header{
+    width: 70vmax;
+    height: 100vmin;
 }
 

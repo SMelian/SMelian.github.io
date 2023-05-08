@@ -122,14 +122,8 @@ p {
   }
 }
 form {
-  margin: 30px 10px;
-  padding: 30px 30px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-}
-form div {
-  margin: 3px 10px;
-  padding: 3px 10px;
 }
 
 @keyframes animacionHeader {
@@ -145,6 +139,7 @@ form div {
 }
 .header-animado {
   height: 70vh;
+  width: 100vw;
   background-size: cover;
   animation-name: animacionHeader;
   animation-duration: 15s;
@@ -154,6 +149,11 @@ form div {
 .transform:hover {
   transform: scale(1.1);
   transition: all 2s;
+}
+
+.header {
+  width: 70vmax;
+  height: 100vmin;
 }
 
 footer {
