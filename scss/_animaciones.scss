@@ -6,8 +6,7 @@
 
 .header-animado{
     height: 70vh;
-    width: 100vw;
-    background-size: cover;
+    background-size:100%;
     animation-name: animacionHeader;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -18,8 +17,4 @@ transform: scale(1.1);
 transition: all 2s;
 }
 
-.header{
-    width: 70vmax;
-    height: 100vmin;
-}
 
