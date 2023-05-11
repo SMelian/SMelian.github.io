@@ -105,6 +105,12 @@ p {
   text-align: center;
 }
 
+.error404 {
+  color: white;
+  font-size: 3em;
+  padding: 10px;
+}
+
 @media (min-width: 720px) {
   .contenedor, .hijo {
     grid-template-columns: repeat(2, 1fr);
