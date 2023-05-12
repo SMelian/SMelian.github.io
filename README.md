@@ -11,7 +11,7 @@ The main objective of this website is to showcase all the available food options
 # 3. Development of my website and knowledge
 My project has undergone a significant change from my initial idea, and it now looks completely different from what I had imagined. I never expected it to turn out this beautifully. I want to express my gratitude to Laura for explaining everything in such a clear and understandable way. I had absolutely no prior experience, and thanks to this course, I am leaving with a wealth of new knowledge. Countless thanks to you!
 
-#4. Links:
-
+# 4. Links:
 a. Server s-melian-github-l0ta4243n-smelian.vercel.app
+
 b. Github pages: https://smelian.github.io/
