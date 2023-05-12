@@ -1,4 +1,4 @@
-# SMelian.github.io
+# Entrega Final - Sofia Melian
 
 # 1. Project's Title: "Caminito Restaurant - Sofia Melian Final Delivery"
 The website  is a restaurant website that caters to both dine-in customers and delivery orders. 
